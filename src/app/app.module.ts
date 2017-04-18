@@ -4,13 +4,24 @@ import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MaterialModule} from '@angular/material';
 import {FlexLayoutModule} from '@angular/flex-layout';
 
 import {AppComponent} from './app.component';
 import {DialogComponent} from './dialog/dialog.component';
 
 import 'hammerjs';
+import {
+  MdButtonModule,
+  MdCardModule,
+  MdIconModule,
+  MdListModule,
+  MdMenuModule,
+  MdSidenavModule,
+  MdSlideToggleModule,
+  MdTabsModule,
+  MdToolbarModule,
+  MdInputModule, MdSelectModule
+} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -21,9 +32,19 @@ import 'hammerjs';
     BrowserModule,
     FormsModule,
     HttpModule,
-    MaterialModule,
     FlexLayoutModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MdToolbarModule,
+    MdIconModule,
+    MdSidenavModule,
+    MdTabsModule,
+    MdListModule,
+    MdButtonModule,
+    MdCardModule,
+    MdSlideToggleModule,
+    MdMenuModule,
+    MdInputModule,
+    MdSelectModule
   ],
   providers: [],
   entryComponents: [DialogComponent],
