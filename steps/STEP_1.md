@@ -113,6 +113,14 @@ html, body {
   height: 100%;
 }
 ```
+
+###### File: `src/app/app.component.css`
+```css
+:host {
+  display: flex;
+  flex: 1;
+}
+```
 ### Tips
 
 #### 1. FlexLayout + Body
