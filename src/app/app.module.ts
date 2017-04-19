@@ -20,7 +20,7 @@ import {
   MdSlideToggleModule,
   MdTabsModule,
   MdToolbarModule,
-  MdInputModule, MdSelectModule
+  MdInputModule, MdSelectModule, MdDialogModule, MdDialogRef
 } from '@angular/material';
 
 @NgModule({
@@ -44,9 +44,10 @@ import {
     MdSlideToggleModule,
     MdMenuModule,
     MdInputModule,
-    MdSelectModule
+    MdSelectModule,
+    MdDialogModule
   ],
-  providers: [],
+  providers: [ ],
   entryComponents: [DialogComponent],
   bootstrap: [AppComponent]
 })
