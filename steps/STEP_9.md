@@ -47,7 +47,7 @@ export class AppComponent {
     ...
   }
 
-  private openAdminDialog() {
+  openAdminDialog() {
     this.dialog.open(DialogComponent);
   }
 
