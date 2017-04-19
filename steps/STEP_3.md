@@ -42,6 +42,8 @@ Here you will have a tab group that will contain the users list within a nav-lis
 
 Adding [users](https://github.com/EladBezalel/material2-start/blob/workshop/src/app/app.component.ts#L14-L74) to the sidebar list
 
+> To make adding users easier merge in `step3users` branch
+
 ###### File:  `src/app/app.component.ts`
 
 ```ts
@@ -73,7 +75,6 @@ export class AppComponent {
 }
 
 ```
-
 ----
 
 [Go to Tutorial Step 4](./STEP_4.md)
