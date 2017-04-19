@@ -21,8 +21,21 @@ npm install @angular/material @angular/flex-layout --save
 
 * Import `FlexLayoutModule` from `@angular/flex-layout` and use it inside the imports
 * Since Angular Material depends on animations, the `BrowserAnimationsModule` needs to be included as well.
-* We don't include MaterialModule in the imports because we should import each module we need independently.
+* We don't include `MaterialModule` in the imports because we should import each module we need independently.
   This is a change from beta 2 to beta 3.
+* Import `MdButtonModule`
+         `MdCardModule` ,
+         `MdIconModule`,
+         `MdListModule`,
+         `MdMenuModule`,
+         `MdSidenavModule`,
+         `MdSlideToggleModule`,
+         `MdTabsModule`,
+         `MdToolbarModule`,
+         `MdInputModule`, 
+         `MdSelectModule`, 
+         `MdDialogModule` in the `imports` section of `src/app/app.module.ts`
+
 
 Modify the following files to use Angular Material and FlexLayout in the application.
 
@@ -38,6 +51,22 @@ import {HttpModule} from '@angular/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FlexLayoutModule} from '@angular/flex-layout';
 
+import {
+  MdButtonModule,
+  MdCardModule,
+  MdIconModule,
+  MdListModule,
+  MdMenuModule,
+  MdSidenavModule,
+  MdSlideToggleModule,
+  MdTabsModule,
+  MdToolbarModule,
+  MdInputModule, 
+  MdSelectModule, 
+  MdDialogModule
+} from '@angular/material';
+
+
 import {AppComponent} from './app.component';
 
 @NgModule({
@@ -49,7 +78,19 @@ import {AppComponent} from './app.component';
     FormsModule,
     HttpModule,
     FlexLayoutModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MdToolbarModule,
+    MdIconModule,
+    MdSidenavModule,
+    MdTabsModule,
+    MdListModule,
+    MdButtonModule,
+    MdCardModule,
+    MdSlideToggleModule,
+    MdMenuModule,
+    MdInputModule,
+    MdSelectModule,
+    MdDialogModule
   ],
   bootstrap: [AppComponent]
 })
