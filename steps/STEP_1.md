@@ -13,16 +13,16 @@
 
 ### Step #1 Task:
 
-Here you will install Angular Material in your Angular application.
-
-* Import `MaterialModule` from `@angular/material` and use it inside the imports
-* Since Angular Material depends on animations, the `BrowserAnimationsModule` needs to be included as well.
-
-> Since we will also be using flexbox CSS, let's also include the `@angular/flex-layout` library.
+Here you will install Angular Material and Flex-Layout in your Angular application.
 
 ```terminal
 npm install @angular/material @angular/flex-layout --save
 ```
+
+* Import `FlexLayoutModule` from `@angular/flex-layout` and use it inside the imports
+* Since Angular Material depends on animations, the `BrowserAnimationsModule` needs to be included as well.
+* We don't include MaterialModule in the imports because we should import each module we need independently.
+  This is a change from beta 2 to beta 3.
 
 Modify the following files to use Angular Material and FlexLayout in the application.
 
