@@ -48,6 +48,7 @@ By that, we can have `<md-icon svgIcon="[namespace]:[id]">` and it would look th
 
 ```ts
 import {Component} from '@angular/core';
+import {DomSanitizer} from '@angular/platform-browser';
 import {MdIconRegistry} from '@angular/material';
 
 @Component({
