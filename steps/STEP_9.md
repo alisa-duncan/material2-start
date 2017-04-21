@@ -55,6 +55,19 @@ export class AppComponent {
 ...
 ```
 
+Position the fab to the bottom right
+
+###### File:  `src/app/app.component.css`
+
+```css
+.fab-bottom-right {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+}
+
+```
+
 To be able to show dialogs, the `MdDialog` service needs to be injected. A function that is 
 referenced from the template will then open the dialog.
 
