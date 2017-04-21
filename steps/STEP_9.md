@@ -33,6 +33,7 @@ A `fab` button at the bottom-right will be created to open the Angular Material 
 
 ```ts
 import {DialogComponent} from './dialog/dialog.component';
+import {MdDialog} from '@angular/material';
 
 @Component({
   selector: 'app-root',
