@@ -15,26 +15,27 @@
 
 Here you will install Angular Material and Flex-Layout in your Angular application.
 
+We are targeting the version of Material and Flex-Layout before they upgraded to Angular v5.
+
 ```terminal
-npm install @angular/material @angular/flex-layout --save
-```
+npm install @angular/material@2.0.0-beta.12 @angular/flex-layout@2.0.0-beta.10 @angular/cdk@2.0.0-beta.12 --save```
 
 * Import `FlexLayoutModule` from `@angular/flex-layout` and use it inside the imports
 * Since Angular Material depends on animations, the `BrowserAnimationsModule` needs to be included as well.
 * We don't include `MaterialModule` in the imports because we should import each module we need independently.
   This is a change from beta 2 to beta 3.
-* Import `MdButtonModule`
-         `MdCardModule` ,
-         `MdIconModule`,
-         `MdListModule`,
-         `MdMenuModule`,
-         `MdSidenavModule`,
-         `MdSlideToggleModule`,
-         `MdTabsModule`,
-         `MdToolbarModule`,
-         `MdInputModule`, 
-         `MdSelectModule`, 
-         `MdDialogModule` in the `imports` section of `src/app/app.module.ts`
+* Import `MatButtonModule`
+         `MatCardModule` ,
+         `MatIconModule`,
+         `MatListModule`,
+         `MatMenuModule`,
+         `MatSidenavModule`,
+         `MatSlideToggleModule`,
+         `MatTabsModule`,
+         `MatToolbarModule`,
+         `MatInputModule`, 
+         `MatSelectModule`, 
+         `MatDialogModule` in the `imports` section of `src/app/app.module.ts`
 
 
 Modify the following files to use Angular Material and FlexLayout in the application.
@@ -52,18 +53,18 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FlexLayoutModule} from '@angular/flex-layout';
 
 import {
-  MdButtonModule,
-  MdCardModule,
-  MdIconModule,
-  MdListModule,
-  MdMenuModule,
-  MdSidenavModule,
-  MdSlideToggleModule,
-  MdTabsModule,
-  MdToolbarModule,
-  MdInputModule, 
-  MdSelectModule, 
-  MdDialogModule
+  MatButtonModule,
+  MatCardModule,
+  MatIconModule,
+  MatListModule,
+  MatMenuModule,
+  MatSidenavModule,
+  MatSlideToggleModule,
+  MatTabsModule,
+  MatToolbarModule,
+  MatInputModule, 
+  MatSelectModule, 
+  MatDialogModule
 } from '@angular/material';
 
 
@@ -79,18 +80,18 @@ import {AppComponent} from './app.component';
     HttpModule,
     FlexLayoutModule,
     BrowserAnimationsModule,
-    MdToolbarModule,
-    MdIconModule,
-    MdSidenavModule,
-    MdTabsModule,
-    MdListModule,
-    MdButtonModule,
-    MdCardModule,
-    MdSlideToggleModule,
-    MdMenuModule,
-    MdInputModule,
-    MdSelectModule,
-    MdDialogModule
+    MatToolbarModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatTabsModule,
+    MatListModule,
+    MatButtonModule,
+    MatCardModule,
+    MatSlideToggleModule,
+    MatMenuModule,
+    MatInputModule,
+    MatSelectModule,
+    MatDialogModule
   ],
   bootstrap: [AppComponent]
 })
