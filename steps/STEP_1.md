@@ -18,7 +18,8 @@ Here you will install Angular Material and Flex-Layout in your Angular applicati
 We are targeting the version of Material and Flex-Layout before they upgraded to Angular v5.
 
 ```terminal
-npm install @angular/material@2.0.0-beta.12 @angular/flex-layout@2.0.0-beta.10 @angular/cdk@2.0.0-beta.12 --save```
+npm install @angular/material@2.0.0-beta.12 @angular/flex-layout@2.0.0-beta.10 @angular/cdk@2.0.0-beta.12 --save
+```
 
 * Import `FlexLayoutModule` from `@angular/flex-layout` and use it inside the imports
 * Since Angular Material depends on animations, the `BrowserAnimationsModule` needs to be included as well.

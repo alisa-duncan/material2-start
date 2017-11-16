@@ -13,30 +13,30 @@
 
 ### Step #4 Task:
 
-Here you will use the `MdIconRegistry` service provided by Material which allows us to add a namespace for a group of svg's.
+Here you will use the `MatIconRegistry` service provided by Material which allows us to add a namespace for a group of svg's.
 
 
 ###### File: `src/app/app.component.html`
 
 ```html
 ...
-  <md-sidenav mode="side" opened>
+  <mat-sidenav mode="side" opened>
   
-    <md-tab-group>
-      <md-tab label="Users">
-        <md-nav-list>
-          <md-list-item *ngFor="let user of users">
-            <md-icon svgIcon="avatars:{{user.avatar}}" class="avatar"></md-icon>
+    <mat-tab-group>
+      <mat-tab label="Users">
+        <mat-nav-list>
+          <mat-list-item *ngFor="let user of users">
+            <mat-icon svgIcon="avatars:{{user.avatar}}" class="avatar"></mat-icon>
             <span>{{user.name}}</span>
-          </md-list-item>
-        </md-nav-list>
-      </md-tab>
-      <md-tab label="Settings">
+          </mat-list-item>
+        </mat-nav-list>
+      </mat-tab>
+      <mat-tab label="Settings">
         <span>Settings</span>
-      </md-tab>
-    </md-tab-group>
+      </mat-tab>
+    </mat-tab-group>
   
-  </md-sidenav>
+  </mat-sidenav>
 ...
 ```
 

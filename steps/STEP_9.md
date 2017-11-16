@@ -18,12 +18,12 @@ Creating an Angular Material dialog.
 ###### File: `src/app/app.component.html`
 
 ```html
-  <md-menu #themeMenu x-position="before">
+  <mat-menu #themeMenu x-position="before">
     ...
-  </md-menu>
+  </mat-menu>
 
-  <button md-fab (click)="openAdminDialog()" class="fab-bottom-right">
-    <md-icon>add</md-icon>
+  <button mat-fab (click)="openAdminDialog()" class="fab-bottom-right">
+    <mat-icon>add</mat-icon>
   </button>
 ```
 
@@ -33,7 +33,7 @@ A `fab` button at the bottom-right will be created to open the Angular Material 
 
 ```ts
 import {DialogComponent} from './dialog/dialog.component';
-import {MdDialog} from '@angular/material';
+import {MatDialog} from '@angular/material';
 
 @Component({
   selector: 'app-root',
@@ -44,7 +44,7 @@ export class AppComponent {
 
   ...
 
-  constructor(iconRegistry: MdIconRegistry, sanitizer: DomSanitizer, private dialog: MdDialog) {
+  constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer, private dialog: MatDialog) {
     ...
   }
 
@@ -68,7 +68,7 @@ Position the fab to the bottom right
 
 ```
 
-To be able to show dialogs, the `MdDialog` service needs to be injected. A function that is 
+To be able to show dialogs, the `MatDialog` service needs to be injected. A function that is 
 referenced from the template will then open the dialog.
 
 ###### File:  `src/app/dialog/dialog.component.ts`
@@ -85,15 +85,15 @@ export class DialogComponent {}
 ###### File: `src/app/dialog/dialog.component.html`
 
 ```html
-<h3 md-dialog-title>Admin Dialog</h3>
+<h3 mat-dialog-title>Admin Dialog</h3>
 
-<md-dialog-content>
+<mat-dialog-content>
   This is the admin dialog.
-</md-dialog-content>
+</mat-dialog-content>
 ```
 
 A dialog can be just a normal Angular component. You can use specific directives 
-like `md-dialog-title`, `md-dialog-content` or `md-dialog-actions` to style your dialog.
+like `mat-dialog-title`, `mat-dialog-content` or `mat-dialog-actions` to style your dialog.
 
 ###### File: `src/app/app.module.ts`
 
