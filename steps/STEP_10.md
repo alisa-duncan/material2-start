@@ -61,6 +61,7 @@ back to the `AppComponent` and added to the array of `users`.
 ```ts
 import {Component} from '@angular/core';
 import {MatDialogRef} from '@angular/material';
+import 'rxjs/add/operator/filter';
 
 @Component({
   templateUrl: 'dialog.component.html'
