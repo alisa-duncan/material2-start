@@ -35,7 +35,8 @@ npm install @angular/material@2.0.0-beta.12 @angular/flex-layout@2.0.0-beta.10 @
          `MatTabsModule`,
          `MatToolbarModule`,
          `MatInputModule`, 
-         `MatSelectModule`, 
+         `MatSelectModule`,
+         `MatCheckboxModule`,
          `MatDialogModule` in the `imports` section of `src/app/app.module.ts`
 
 
@@ -65,6 +66,7 @@ import {
   MatToolbarModule,
   MatInputModule, 
   MatSelectModule, 
+  MatCheckboxModule,
   MatDialogModule
 } from '@angular/material';
 

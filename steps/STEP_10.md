@@ -28,7 +28,7 @@ Creating a form inside of the Angular Material dialog.
       </mat-select>
     </div>
     <mat-input-container>
-      <input mdInput ngModel name="name" placeholder="Full name" required>
+      <input matInput ngModel name="name" placeholder="Full name" required>
     </mat-input-container>
 
     <mat-input-container>
@@ -69,7 +69,7 @@ export class DialogComponent {
   avatars = new Array(16).fill(0).map((_, i) => `svg-${i+1}`);
   selectedAvatar = this.avatars[0];
 
-  constructor(public dialogRef: MdDialogRef<DialogComponent>) {}
+  constructor(public dialogRef: MatDialogRef<DialogComponent>) {}
 }
 
 ```

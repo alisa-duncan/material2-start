@@ -40,16 +40,16 @@ Here you will use the `MatIconRegistry` service provided by Material which allow
 ...
 ```
 
-By using the `addSvgIconSetInNamespace` function we provide a namespace that can be used with `md-icon` 
+By using the `addSvgIconSetInNamespace` function we provide a namespace that can be used with `mat-icon` 
 and the location of that svg group.
-By that, we can have `<md-icon svgIcon="[namespace]:[id]">` and it would look the namespace and the id in it.
+By that, we can have `<mat-icon svgIcon="[namespace]:[id]">` and it would look the namespace and the id in it.
 
 ###### File:  `src/app/app.component.ts`
 
 ```ts
 import {Component} from '@angular/core';
 import {DomSanitizer} from '@angular/platform-browser';
-import {MdIconRegistry} from '@angular/material';
+import {MatIconRegistry} from '@angular/material';
 
 @Component({
   selector: 'app-root',
@@ -75,7 +75,7 @@ export class AppComponent {
     // ...
   ];
 
-  constructor(iconRegistry: MdIconRegistry, sanitizer: DomSanitizer) {
+  constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
     // To avoid XSS attacks, the URL needs to be trusted from inside of your application.
     const avatarsSafeUrl = sanitizer.bypassSecurityTrustResourceUrl('../assets/avatars.svg');
 
